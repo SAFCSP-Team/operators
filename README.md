@@ -1,25 +1,33 @@
-# Operators
-
-### Objective
-
-Understand and apply basic operators in Java.
-
-### Problem
-
-Use arithmetic, assignment, comparison, and logical operators on the provided input.
-
-### Implementation
-
-- Create two integer variables: `a = 10` and `b = 3`.
-- Print the sum, difference, and product of `a` and `b`.
-- Use the assignment operator to add `5` to `a` and print the result.
-- Compare if `a` is greater than `b` and print the result.
-- Use logical operators to check if `a` is greater than `5` and `b` is less than `5`, then print the result.
-
-```java
 public class Main {
     public static void main(String[] args) {
-        /* add your code here */
+
+        int a = 10;
+        int b = 3;
+
+        Arithmetic operations
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+        System.out.println("Modulus: " + (a % b));
+
+        Increment & Decrement
+        a++;
+        b--;
+
+        // Assignment operator
+        a += 5;
+
+        Comparison operators
+        System.out.println("Is a equal to b? " + (a == b));
+        System.out.println("Is a greater than b? " + (a > b));
+
+        Logical operators
+        boolean isAdult = true;
+        boolean hasLicense = false;
+
+        System.out.println("Adult AND has license: " + (isAdult && hasLicense));
+        System.out.println("Adult OR has license: " + (isAdult || hasLicense));
+        System.out.println("NOT has license: " + (!hasLicense));
     }
 }
-```
